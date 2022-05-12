@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="musicApp">
+
+        <div class="app">
+            <div class="container"> 
+                <div class="display">
+                    <h4 class="display-now">
+                        Now playing
+                    </h4>
+                    <h2 class="display-now--name">
+                        Hoa Hai Duong
+                    </h2>
+                    <img class="cd" id = "thumbnail" src="/image/hoa-hai-duong.jpeg" alt="">
+                </div>
+                <div class="icon">  
+                    <i class="icon-display  fa-solid fa-rotate rotateBtn"></i>
+                    <i class="icon-display  fa-solid fa-backward-step prevBtn"></i>
+                    <i class="icon-display  fa-solid fa-circle-play play"></i>
+                    <i class="icon-display  fa-solid fa-circle-pause pause"></i>
+                    <i class="icon-display  fa-solid fa-forward-step nextBtn"></i>
+                    <i class="icon-display  fa-solid fa-shuffle randomBtn"></i>
+                </div>
+                <input id="progress" class="input" type="range" min="0" max="100" step="0.1" value="0" class="playing">
+                <audio class="audio" src=""></audio>
+            </div>
+        </div>
+        <div class="play-list">
+            <div class="song">
+
+            </div>
+        </div>
+    </div>
+    <img class="bgSlide" src="/image/attack-on-titan.jpg" alt="">
+
+    <script src = "/app.js"></script>
+</body>
+</html>
